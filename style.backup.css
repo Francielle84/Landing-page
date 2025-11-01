@@ -1,0 +1,99 @@
+/* Variáveis e configuração base */
+:root {
+    /* Cores */
+    --color-bg: #ffffff;
+    --color-panel: rgba(247, 250, 252, 0.95);
+    --color-accent: #ADD8E6;
+    --color-accent-2: #7EC8FF;
+    --color-accent-3: #8AA7FF;
+    --color-text: #0b3d91;
+    --color-muted: #6B7C93;
+    
+    /* Tipografia */
+    --font-main: 'Inter', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+    --font-size-sm: clamp(0.8rem, 0.17vw + 0.76rem, 0.89rem);
+    --font-size-base: clamp(1rem, 0.34vw + 0.91rem, 1.19rem);
+    --font-size-lg: clamp(1.25rem, 0.61vw + 1.1rem, 1.58rem);
+    --font-size-xl: clamp(1.56rem, 1vw + 1.31rem, 2.11rem);
+    --font-size-2xl: clamp(1.95rem, 1.56vw + 1.56rem, 2.81rem);
+    --line-height-base: 1.75;
+    
+    /* Espaçamento */
+    --space-xs: clamp(0.75rem, 0.69rem + 0.29vw, 0.9375rem);
+    --space-sm: clamp(1rem, 0.92rem + 0.39vw, 1.25rem);
+    --space-md: clamp(1.5rem, 1.38rem + 0.58vw, 1.875rem);
+    --space-lg: clamp(2rem, 1.84rem + 0.78vw, 2.5rem);
+    --space-xl: clamp(3rem, 2.77rem + 1.17vw, 3.75rem);
+    
+    /* Efeitos */
+    --shadow-sm: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    --shadow-md: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+    --shadow-accent: 0 4px 14px 0 rgba(173, 216, 230, 0.39);
+    --radius-sm: 0.5rem;
+    --radius-md: 1rem;
+    --radius-lg: 2rem;
+    
+    /* Animações */
+    --transition-base: 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-smooth: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+/* Reset e estilos base */
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--font-main);
+    font-size: var(--font-size-base);
+    line-height: var(--line-height-base);
+    background-color: var(--color-bg);
+    color: var(--color-text);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Header moderno */
+header {
+    background: linear-gradient(135deg, var(--color-accent-2), var(--color-accent-3));
+    padding: var(--space-xl) var(--space-md);
+    text-align: center;
+    border-radius: 0 0 var(--radius-lg) var(--radius-lg);
+    box-shadow: var(--shadow-md);
+}
+
+header h1 {
+    font-size: var(--font-size-2xl);
+    font-weight: 700;
+    margin-bottom: var(--space-sm);
+    letter-spacing: -0.02em;
+} 
+main { 
+max-width: 800px; 
+margin: 20px auto; 
+padding: 1rem; 
+background-color: #ffffff; 
+border-radius: 8px; 
+} 
+section { 
+margin-bottom: 25px; 
+} 
+h3 { 
+border-bottom: 2px solid #eaecef; 
+padding-bottom: 5px; 
+} 
+button { 
+background-color: #0366d6; 
+color: white; 
+padding: 10px 15px; 
+border: none; 
+border-radius: 5px; 
+cursor: pointer; 
+font-size: 1rem; 
+} 
+button:hover { 
+background-color: #0056b3; 
+} 

@@ -1,39 +1,112 @@
-HTML 
+ 
 <!DOCTYPE html> 
 <html lang="pt-br"> 
 <head> 
     <meta charset="UTF-8"> 
-    <meta name="viewport" content="width=device-width, initial
-scale=1.0"> 
-    <title>Meu Perfil de IA</title> 
-    <link rel="stylesheet" href="style.css"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Francielle Gonçalves | IA Jovem</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head> 
-<body> 
-    <header> 
-        <h1>Olá! Eu sou Francielle Gonçalves</h1> 
-        <h2>Futura Especialista em Inteligência Artificial</h2> 
+<body class="bg-pattern"> 
+    <header class="header">
+        <div class="header__content">
+            <h1 class="header__title">Olá! Eu sou Francielle Gonçalves</h1>
+            <p class="header__subtitle">Futura Especialista em Inteligência Artificial</p>
+        </div>
     </header> 
  
-    <main> 
-        <section id="sobre-mim"> 
-            <h3>Especialista em projetos farmacêuticos se aventurando no mundo da IA</h3> 
-            <p>Formada em Administração de Empresas e Pós Graduada e Engenharia de Produção, Aventureira, Hard Working. Cursando Inteligencia Artificial Meus hobbies são: viajar, ler e aprender sobre novas tecnologias. As mudanças tecnologicas me trouxe aqui para aprender, acompanhar e adaptar as mudanças continuas.</p> 
-        </section> 
- 
-        <section id="jornada-ia"> 
-            <h3>Minha Jornada em IA</h3> 
-            <p>Tenho curiosidade sobre como a IA funciona e como pode impactar o futuro. Meu maior interesse está em Redes Neurais. Meu objetivo é aprender a trabalhar com a IA para desenvolver soluções inovadores.</p> 
-        </section> 
- 
-        <section id="projetos"> 
-            <h3>Meus Projetos</h3> 
-            <p>Em breve, esta seção terá links para meus projetos de 
-IA hospedados no GitHub!</p> 
-            <button id="meu-botao">Clique para uma 
-surpresa!</button> 
-        </section> 
-    </main> 
+    <main class="container">
+        <section class="hero animate-fadeUp">
+            <div class="hero__content">
+                <h2 class="card__title">Especialista em Projetos Farmacêuticos</h2>
+                <p>Formada em Administração de Empresas e Pós-Graduada em Engenharia de Produção, sou uma profissional aventureira e dedicada, atualmente mergulhando no fascinante mundo da Inteligência Artificial.</p>
+                <div class="button-group" style="margin-top: var(--space-md);">
+                    <a href="#jornada" class="button">Minha Jornada</a>
+                    <a href="#projetos" class="button button--outline">Ver Projetos</a>
+                </div>
+            </div>
+            <div class="hero__image-wrapper">
+                <img src="https://avatars.githubusercontent.com/Francielle84" alt="Francielle Gonçalves" class="hero__image">
+            </div>
+        </section>
+
+        <section id="jornada" class="grid animate-fadeUp" style="margin-top: var(--space-xl);">
+            <div class="card">
+                <h3 class="card__title">Minha Jornada em IA</h3>
+                <p class="card__content">Fascinada por como a IA está revolucionando o mundo, meu foco está em Redes Neurais e suas aplicações práticas. Busco desenvolver soluções inovadoras que combinem minha experiência em projetos com o poder da IA.</p>
+            </div>
+
+            <div class="card">
+                <h3 class="card__title">Hobbies & Interesses</h3>
+                <p class="card__content">Apaixonada por viagens, leitura e novas tecnologias. Acredito que a combinação de diferentes experiências nos torna profissionais mais completos e inovadores.</p>
+            </div>
+
+            <div class="card">
+                <h3 class="card__title">Objetivos</h3>
+                <p class="card__content">Busco me tornar uma especialista em IA, desenvolvendo soluções que impactem positivamente o setor farmacêutico e além. Sempre aberta a novos desafios e aprendizados.</p>
+            </div>
+        </section>
+
+        <section id="skills" class="grid animate-fadeUp" style="margin-top: var(--space-xl);">
+            <div class="skill-card">
+                <h3 class="card__title">Gestão de Projetos</h3>
+                <div class="skill-progress">
+                    <div class="skill-progress-bar" style="width: 90%;"></div>
+                </div>
+            </div>
+
+            <div class="skill-card">
+                <h3 class="card__title">Inteligência Artificial</h3>
+                <div class="skill-progress">
+                    <div class="skill-progress-bar" style="width: 65%;"></div>
+                </div>
+            </div>
+
+            <div class="skill-card">
+                <h3 class="card__title">Engenharia de Produção</h3>
+                <div class="skill-progress">
+                    <div class="skill-progress-bar" style="width: 85%;"></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projetos" class="animate-fadeUp" style="margin-top: var(--space-xl);">
+            <h2 class="card__title" style="text-align: center; margin-bottom: var(--space-lg);">Meus Projetos</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3 class="card__title">Landing Page</h3>
+                    <p class="card__content">Página pessoal moderna desenvolvida com HTML, CSS e JavaScript, apresentando minha jornada profissional.</p>
+                    <a href="#" class="button" style="margin-top: var(--space-sm);">Ver Projeto</a>
+                </div>
+                
+                <div class="card">
+                    <h3 class="card__title">Projetos IA</h3>
+                    <p class="card__content">Em breve, compartilharei aqui meus projetos envolvendo Inteligência Artificial e suas aplicações práticas.</p>
+                    <button class="button button--outline" style="margin-top: var(--space-sm);" id="meu-botao">Em Breve</button>
+                </div>
+
+                <div class="card">
+                    <h3 class="card__title">Contribuições</h3>
+                    <p class="card__content">Acompanhe minhas contribuições e projetos open source no GitHub.</p>
+                    <a href="https://github.com/Francielle84" class="button" style="margin-top: var(--space-sm);">GitHub</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container footer__content">
+            <p>&copy; 2025 Francielle Gonçalves</p>
+            <div class="footer__links">
+                <a href="https://github.com/Francielle84" class="footer__link">GitHub</a>
+                <a href="#" class="footer__link">LinkedIn</a>
+                <a href="#" class="footer__link">Email</a>
+            </div>
+        </div>
+    </footer>
      
-    <script src="script.js"></script> 
+    <script src="game.js"></script>
 </body> 
 </html>
